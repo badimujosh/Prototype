@@ -1,4 +1,4 @@
-﻿/// <reference path="C:\Users\Badimu.Kazadi\Documents\Visual Studio 2015\Projects\Online Book Store Front-End\Online Book Front-End\Online Book Front-End\scripts/angular.js" />
+﻿/// <reference path="C:\Users\Badimu.Kazadi\Documents\Visual Studio 2015\Projects\Prototype V0.1\Prototype V0.1\Prototype V0.1\scripts/angular.js" />
 
 
 var myApp = angular.module("myApp", ['ngRoute', 'Services']);
@@ -14,11 +14,16 @@ myApp.config(['$routeProvider',
             }).
             when('/Register', {
                 templateUrl: 'View/Register.html',
-                controller: 'SignUpController'
+                controller: 'UserController'
             }).
             when('/LogIn', {
                 templateUrl: 'View/Login.html',
                 controller: 'LogInController'
+            }).
+            when('/Become Partner',
+            {
+                templateUrl: 'View/Partner.html',
+                controller: 'PartnerController'
             }).
 
             when('/Profile',
@@ -27,10 +32,10 @@ myApp.config(['$routeProvider',
                 controller: 'UpdateProfileController'
             }).
 
-            when('/Book',
+            when('/Service',
             {
-                templateUrl: 'View/Property.html',
-                controller: 'BookController'
+                templateUrl: 'View/Service.html',
+                controller: 'ServiceController'
             }). /*
             when('/Upload',
             {

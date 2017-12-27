@@ -16,8 +16,9 @@
 <body>
 
     <div class="modal-header">
-        <div class="container carousel text-center" >
-            <h1>Boko Store</h1>
+        <div class="container-fluid text-center" >
+            <h1>Handy Service</h1>
+            <p> <i>"Handy Service Right At Your Door"</i></p>
           
         </div>
     </div>
@@ -38,8 +39,9 @@
                         <li class="active"><a href="#!Home">Home</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right" ng-show="!userData">
-                        <li><a href="#!Register">Register</a></li>
+                        <li><a href="#!Register">Sign Up</a></li>
                         <li><a href="#!LogIn">Log In</a></li>
+                        <li><a href="#!Become Partner">Be A Partner</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right " ng-hide="!userData">
                         <li><a href="#!Profile">{{profile}}</a></li>
@@ -53,10 +55,10 @@
             </div>
         </nav>
 
-    <div class="row">
+    <div class="row" style="background-image:url('Images/Home.jpg')">
      
         <div class="container-fluid" ng-view>
-
+           
         </div>
         
 
@@ -70,7 +72,7 @@
 
     <div class="modal-footer">
         <footer>
-            <p class="container text-center"><b>Boko Online Store 2017 </b></p>
+            <p class="container text-center"><i> Copyright &copy; 3B Tech Group 2018 </i></p>
         </footer>
         
        
