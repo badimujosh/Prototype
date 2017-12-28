@@ -1,28 +1,41 @@
-﻿<div>
-    <h2 class="text-center text-danger">New Partner</h2>
-
+﻿
     <div>
         <div class="col-md-6 col-md-offset-3">
-            <form class="jumbotron">
-                <div class="form-group">
+            <br/>
+            <form class="jumbotron" style="width:100%">
+                <p class="text-center text-danger"><i>New Partner</i></p>
 
-                    <input type="text" ng-model="Username" class="form-control input-lg" placeholder="Username" />
+                <div class="form-inline">
+                  <input type="text" ng-model="Firstname" class="form-control" placeholder="First name" />
+                  <input type="text" ng-model="Surname" class="form-control" placeholder="Surname" />
                 </div>
                 <div class="form-group">
-
-                    <input type="text" ng-model="Email" class="form-control input-lg" placeholder="Email" />
+                    <input type="text" ng-model="Title" class="form-control" placeholder="Your title" />
                 </div>
                 <div class="form-group">
-
-                    <input type="date" ng-model="DOB" class="form-control input-lg" placeholder="Date of Birth" />
+                    <input type="text" ng-model="BusinessNum" class="form-control" placeholder="Your business number" />
                 </div>
                 <div class="form-group">
-
-                    <input type="password" ng-model="Password" class="form-control input-lg" placeholder="Password" />
+                    <input type="text" ng-model="BusinessEmail" class="form-control" placeholder="Business email" />
                 </div>
-                <button ng-click="()" class="btn btn-success form-control input-lg">Register</button>
+                <div class="form-group">
+                    <input type="text" ng-model="BusinessPassword" class="form-control" placeholder="Business name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" ng-model="BusinessName" class="form-control" placeholder="Business name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" ng-model="BusinessAddress" class="form-control" placeholder="Business Address" />
+                </div>
+                <div class="form-group">
+                    <input type="text" ng-model="LocationTotal" class="form-control" placeholder="Number of location" />
+                </div>
+                <div class="form-group">
+                    <input type="text" ng-model="ServiceDesc" class="form-control" placeholder="Service Description" />
+                </div>
+                <button ng-click="()" class="btn btn-info form-control">Sign up</button>
             </form>
         </div>
 
     </div>
-</div>
+

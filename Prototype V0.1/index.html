@@ -2,84 +2,89 @@
 <html ng-app="myApp">
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
 
     <script src="scripts/jquery-3.2.1.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
-   
+
     <script src="scripts/bootstrap.js"></script>
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-route.js"></script>
     <script src="Main.js"></script>
     <script src="Services.js"></script>
 </head>
-<body>
+<body style="font-family:'Palatino Linotype'">
 
     <div class="modal-header">
-        <div class="container-fluid text-center" >
+        <div class="container-fluid text-center">
             <h1>Handy Service</h1>
             <p> <i>"Handy Service Right At Your Door"</i></p>
-          
+
         </div>
     </div>
 
-
-        <nav role="navigation" class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#!Logo">LOGO</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#!Home">Home</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right" ng-show="!userData">
-                        <li><a href="#!Register">Sign Up</a></li>
-                        <li><a href="#!LogIn">Log In</a></li>
-                        <li><a href="#!Become Partner">Be A Partner</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right " ng-hide="!userData">
-                        <li><a href="#!Profile">{{profile}}</a></li>
-                        <li><a href="#!Book">Manage Books</a></li>
-                        <li><a href="#!Upload">Upload Image</a></li>
-                        <li><a href="#!Logout" ng-click="logout()">Logout</a></li>
-
-                    </ul>
-
-                </div>
+    <nav role="navigation" class="navbar navbar-inverse bg-info">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#!Logo">LOGO</a>
             </div>
-        </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#!Home">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" ng-show="!userData">
+                    <li><a href="#!Register">Sign Up</a></li>
+                    <li><a href="#!Services">Services</a></li>
+                    <li><a href="#!LogIn">Log In</a></li>
+                    <li><a href="#!Become Partner">Be A Partner</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right " ng-hide="!userData">
+                    <li><a href="#!Profile">{{profile}}</a></li>
+                    <li><a href="#!Logout" ng-click="logout()">Logout</a></li>
+                </ul>
 
-    <div class="row" style="background-image:url('Images/Home.jpg')">
-     
-        <div class="container-fluid" ng-view>
-           
+            </div>
         </div>
-        
-
-    </div>
-            
-    
-        <br />
-        <br />
-   
-    
-
-    <div class="modal-footer">
-        <footer>
-            <p class="container text-center"><i> Copyright &copy; 3B Tech Group 2018 </i></p>
-        </footer>
-        
        
-    </div>
+    </nav>
 
-      
-    
+    <div class="container">
+       
+            <div class="row" ng-view>
+
+
+            </div>
+            <br />
+    </div>
+  
+ 
+
+
+
+    <div>
+        <footer class="container-fluid text-center" style="background-color:#808080">
+            <p><i> Copyright &copy; 3B Tech Group 2018 </i></p>
+            <form class="form-inline">
+                Suscribe :
+                <input type="email" ng-model="Email" class="form-control" size="50" placeholder="Email Address" />
+                <button ng-click="()" class="btn btn-info form-control">Sign Up</button>
+
+                <br/>
+                <br/>
+
+            </form>
+        </footer>
+    </div>
+        
+
+
+
+
 </body>
 
 

@@ -102,6 +102,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\DamageRepair.png" />
+    <Content Include="Images\Home.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -921,6 +923,7 @@
     <Content Include="Services.js" />
     <Content Include="View\Home.html" />
     <Content Include="View\Login.html" />
+    <Content Include="View\Partner.html" />
     <Content Include="View\Register.html" />
     <Content Include="Web.config" />
     <Content Include="scripts\version.json" />
