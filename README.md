@@ -1,4 +1,9 @@
-# Online-Book-Front-End
+# Handy Services Provider
 
-This is the front-End design of an online E-book store. Still in construction and later put it out and see how people will react.
-The aim is to provide user with a platform to sell their second hand books out for sell.
+Still working on the Front-End side of possible Handy Services Provider Web Application that provides users with the ability to become
+business partner as well as Professional in order to provide services to customers.
+Still needs an hands in order to have it fully functionning.
+Contact me via badimujosh@gmail.com or +27 83 897 9778 for more detail regarding the application.
+
+Kind regards
+KJ Badimu
